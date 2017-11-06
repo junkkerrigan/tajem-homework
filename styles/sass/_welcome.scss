@@ -1,0 +1,110 @@
+.fixed-header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+
+  &-wrapper {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-top: 15px
+  }
+
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-top: 35px;
+
+    &-item {
+      margin-left: 25px;
+      text-decoration: none;
+      font-family: "Roboto - Black", $default-fonts;
+      color: white;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.33px;
+
+      &:hover {
+        color: #00e0d0;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.main-header {
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  &-photo::after {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+
+  &-content {
+    width: 770px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-title {
+    color: #ffffff;
+    font-family: "Playfair Display", $default-fonts;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin: 0;
+  }
+
+  &-data {
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: Roboto, $default-fonts;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    text-align: center;
+  }
+
+  .expanding-button {
+    margin-top: 50px;
+  }
+}
+
+.expanding-button {
+  color: #00e0d0;
+  font-family: "Hammersmith One", $default-fonts;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 1px solid #00e0d0;
+  text-decoration: none;
+}
