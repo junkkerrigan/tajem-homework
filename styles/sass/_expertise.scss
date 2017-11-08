@@ -36,26 +36,21 @@
          flex-wrap: wrap;
 
          .web-design::before {
-            content: "";
+            /*content: "";
             width: 49px;
             height: 50px;
-            background: url("../img/web-design.png") 50% 50% no-repeat;
+            background: url(../img/web-design.png) 50% 50% no-repeat;
             background-size: cover;
             top: 13%;
             left: 0;
             right: 0;
             margin: 0 auto;
             display: block;
-            position: absolute;
-
+            position: absolute;*/
          }
-
          &-item {
-            flex-basis: 33%;
             text-align: center;
-            padding-top: 115px;
-            position: relative;
-
+            flex-basis: 33.333%;
          }
 
          &-title {
