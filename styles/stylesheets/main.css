@@ -256,27 +256,89 @@ section {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 70px;
+  border-collapse: collapse;
 }
-/* line 38, ../sass/_expertise.scss */
+/* line 41, ../sass/_expertise.scss */
 .expertise-list .web-design::before {
-  /*content: "";
+  content: "";
   width: 49px;
   height: 50px;
-  background: url(../img/web-design.png) 50% 50% no-repeat;
-  background-size: cover;
-  top: 13%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  background: url("../../img/web-design.png");
   display: block;
-  position: absolute;*/
+  margin: 0 auto 35px;
 }
-/* line 51, ../sass/_expertise.scss */
+/* line 50, ../sass/_expertise.scss */
+.expertise-list .identity::before {
+  content: "";
+  width: 50px;
+  height: 42px;
+  background: url("../../img/identity.png");
+  display: block;
+  margin: 0 auto 40px;
+}
+/* line 59, ../sass/_expertise.scss */
+.expertise-list .mobile::before {
+  content: "";
+  width: 28px;
+  height: 50px;
+  background: url("../../img/mobile.png");
+  display: block;
+  margin: 0 auto 35px;
+}
+/* line 68, ../sass/_expertise.scss */
+.expertise-list .optimize::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("../../img/optimize.png");
+  display: block;
+  margin: 0 auto 35px;
+}
+/* line 77, ../sass/_expertise.scss */
+.expertise-list .game::before {
+  content: "";
+  width: 41px;
+  height: 50px;
+  background: url("../../img/game.png");
+  display: block;
+  margin: 0 auto 35px;
+}
+/* line 86, ../sass/_expertise.scss */
+.expertise-list .love::before {
+  content: "";
+  width: 50px;
+  height: 46px;
+  background: url("../../img/love.png");
+  display: block;
+  margin: 0 auto 35px;
+}
+/* line 98, ../sass/_expertise.scss */
+.expertise-list-item:nth-child(3n+1) {
+  border-bottom: 1px solid #ebebeb;
+}
+/* line 102, ../sass/_expertise.scss */
+.expertise-list-item:nth-child(3n+2), .expertise-list-item:nth-child(3n) {
+  border-left: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+/* line 107, ../sass/_expertise.scss */
+.expertise-list .prelast {
+  border: none;
+  border-right: 1px solid #ebebeb;
+}
+/* line 112, ../sass/_expertise.scss */
+.expertise-list .last {
+  border: none;
+}
+/* line 117, ../sass/_expertise.scss */
 .expertise-list-item {
   text-align: center;
-  flex-basis: 33.333%;
+  flex-basis: calc(100%/3);
+  padding: 30px;
+  box-sizing: border-box;
 }
-/* line 56, ../sass/_expertise.scss */
+/* line 124, ../sass/_expertise.scss */
 .expertise-list-title {
   color: #413d4b;
   font-family: Roboto, Helvetica, Georgia, sans-serif;
@@ -285,12 +347,14 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
-/* line 65, ../sass/_expertise.scss */
+/* line 133, ../sass/_expertise.scss */
 .expertise-list-content {
+  opacity: 0.75;
   color: #333333;
-  font-family: Roboto;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   letter-spacing: 0.7px;
+  margin-top: 25px;
 }

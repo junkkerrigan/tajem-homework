@@ -34,23 +34,91 @@
          list-style-type: none;
          display: flex;
          flex-wrap: wrap;
+         margin-top: 70px;
+         border-collapse: collapse;
 
-         .web-design::before {
-            /*content: "";
-            width: 49px;
-            height: 50px;
-            background: url(../img/web-design.png) 50% 50% no-repeat;
-            background-size: cover;
-            top: 13%;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            display: block;
-            position: absolute;*/
-         }
+         //icons
+                 .web-design::before {
+                    content: "";
+                    width: 49px;
+                    height: 50px;
+                    background: url("../../img/web-design.png");
+                    display: block;
+                    margin: 0 auto 35px;
+                 }
+
+                 .identity::before {
+                    content: "";
+                    width: 50px;
+                    height: 42px;
+                    background: url("../../img/identity.png");
+                    display: block;
+                    margin: 0 auto 40px;
+                 }
+
+                 .mobile::before {
+                    content: "";
+                    width: 28px;
+                    height: 50px;
+                    background: url("../../img/mobile.png");
+                    display: block;
+                    margin: 0 auto 35px;
+                 }
+
+                 .optimize::before {
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    background: url("../../img/optimize.png");
+                    display: block;
+                    margin: 0 auto 35px;
+                 }
+
+                 .game::before {
+                    content: "";
+                    width: 41px;
+                    height: 50px;
+                    background: url("../../img/game.png");
+                    display: block;
+                    margin: 0 auto 35px;
+                 }
+
+                 .love::before {
+                    content: "";
+                    width: 50px;
+                    height: 46px;
+                    background: url("../../img/love.png");
+                    display: block;
+                    margin: 0 auto 35px;
+                 }
+
+         //icons
+
+         //borders
+                 &-item:nth-child(3n+1) {
+                    border-bottom: $border-white;
+                 }
+
+                 &-item:nth-child(3n+2), &-item:nth-child(3n) {
+                    border-left: $border-white;
+                    border-bottom:  $border-white;
+                 }
+
+                 .prelast {
+                    border: none;
+                    border-right:  $border-white;
+                 }
+
+                 .last {
+                    border: none;
+                 }
+         //borders
+
          &-item {
             text-align: center;
-            flex-basis: 33.333%;
+            flex-basis: calc(100%/3);
+            padding: 30px;
+            box-sizing: border-box;
          }
 
          &-title {
@@ -63,12 +131,14 @@
          }
 
          &-content {
+            opacity: 0.75;
             color: #333333;
-            font-family: Roboto;
+            font-family: Roboto, $default-fonts;
             font-size: 14px;
             font-weight: 300;
             line-height: 22px;
             letter-spacing: 0.7px;
+            margin-top: 25px;
          }
      }
  }
