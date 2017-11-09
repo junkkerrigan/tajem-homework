@@ -29,7 +29,8 @@
 
   &-wrapper {
     position: relative;
-    width: 940px;
+    min-width: 940px;
+    width: 60%;
     margin: 0 auto;
   }
 

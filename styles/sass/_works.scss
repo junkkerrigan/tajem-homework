@@ -1,0 +1,57 @@
+.works {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &-wrapper {
+   width: 100%;
+  }
+
+  &-heading {
+    min-width: 940px;
+    width: 60%;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &-title {
+    color: #413d4b;
+    font-family: "Playfair Display", $default-fonts;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+  }
+
+  button {
+    color: #413d4b;
+    font-family: Roboto, $default-fonts;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 10px;
+    }
+
+  }
+
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 85px;
+
+    &-item {
+      width: calc(100% / 6);
+      overflow: hidden;
+      }
+    }
+}

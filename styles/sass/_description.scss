@@ -71,7 +71,8 @@
 
   &-wrapper {
     position: relative;
-    width: 160px;
+    min-width: 160px;
+    width: 10%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
