@@ -85,8 +85,19 @@
   font-weight: 400;
   letter-spacing: 0.32px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 86, ../sass/_welcome.scss */
+/* line 88, ../sass/_welcome.scss */
+.main-header-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 1px solid #00e0d0;
+  margin-top: 20px;
+}
+/* line 97, ../sass/_welcome.scss */
 .main-header-data {
   margin-top: 30px;
   color: #ffffff;
@@ -97,12 +108,12 @@
   letter-spacing: 0.7px;
   text-align: center;
 }
-/* line 97, ../sass/_welcome.scss */
+/* line 108, ../sass/_welcome.scss */
 .main-header .expanding-button {
   margin-top: 50px;
 }
 
-/* line 102, ../sass/_welcome.scss */
+/* line 113, ../sass/_welcome.scss */
 .expanding-button {
   color: #00e0d0;
   font-family: "Hammersmith One", Helvetica, Georgia, sans-serif;
@@ -255,8 +266,19 @@ section {
   font-weight: 400;
   letter-spacing: 1.05px;
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 35, ../sass/_expertise.scss */
+/* line 37, ../sass/_expertise.scss */
+.expertise-subtitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 1px solid #413d4b;
+  margin-top: 20px;
+}
+/* line 46, ../sass/_expertise.scss */
 .expertise-list {
   list-style-type: none;
   display: flex;
@@ -264,7 +286,7 @@ section {
   margin-top: 70px;
   border-collapse: collapse;
 }
-/* line 43, ../sass/_expertise.scss */
+/* line 54, ../sass/_expertise.scss */
 .expertise-list .web-design::before {
   content: "";
   width: 49px;
@@ -273,7 +295,7 @@ section {
   display: block;
   margin: 0 auto 35px;
 }
-/* line 52, ../sass/_expertise.scss */
+/* line 63, ../sass/_expertise.scss */
 .expertise-list .identity::before {
   content: "";
   width: 50px;
@@ -282,7 +304,7 @@ section {
   display: block;
   margin: 0 auto 40px;
 }
-/* line 61, ../sass/_expertise.scss */
+/* line 72, ../sass/_expertise.scss */
 .expertise-list .mobile::before {
   content: "";
   width: 28px;
@@ -291,7 +313,7 @@ section {
   display: block;
   margin: 0 auto 35px;
 }
-/* line 70, ../sass/_expertise.scss */
+/* line 81, ../sass/_expertise.scss */
 .expertise-list .optimize::before {
   content: "";
   width: 50px;
@@ -300,7 +322,7 @@ section {
   display: block;
   margin: 0 auto 35px;
 }
-/* line 79, ../sass/_expertise.scss */
+/* line 90, ../sass/_expertise.scss */
 .expertise-list .game::before {
   content: "";
   width: 41px;
@@ -309,7 +331,7 @@ section {
   display: block;
   margin: 0 auto 35px;
 }
-/* line 88, ../sass/_expertise.scss */
+/* line 99, ../sass/_expertise.scss */
 .expertise-list .love::before {
   content: "";
   width: 50px;
@@ -318,32 +340,32 @@ section {
   display: block;
   margin: 0 auto 35px;
 }
-/* line 100, ../sass/_expertise.scss */
+/* line 111, ../sass/_expertise.scss */
 .expertise-list-item:nth-child(3n+1) {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 104, ../sass/_expertise.scss */
+/* line 115, ../sass/_expertise.scss */
 .expertise-list-item:nth-child(3n+2), .expertise-list-item:nth-child(3n) {
   border-left: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 109, ../sass/_expertise.scss */
+/* line 120, ../sass/_expertise.scss */
 .expertise-list .prelast {
   border: none;
   border-right: 1px solid #ebebeb;
 }
-/* line 114, ../sass/_expertise.scss */
+/* line 125, ../sass/_expertise.scss */
 .expertise-list .last {
   border: none;
 }
-/* line 119, ../sass/_expertise.scss */
+/* line 130, ../sass/_expertise.scss */
 .expertise-list-item {
   text-align: center;
   flex-basis: calc(100%/3);
   padding: 30px;
   box-sizing: border-box;
 }
-/* line 126, ../sass/_expertise.scss */
+/* line 137, ../sass/_expertise.scss */
 .expertise-list-title {
   color: #413d4b;
   font-family: Roboto, Helvetica, Georgia, sans-serif;
@@ -352,7 +374,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
-/* line 135, ../sass/_expertise.scss */
+/* line 146, ../sass/_expertise.scss */
 .expertise-list-content {
   opacity: 0.75;
   color: #333333;
@@ -415,22 +437,33 @@ section {
   letter-spacing: 1.05px;
   margin-bottom: 65px;
   opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 57, ../sass/_team.scss */
+/* line 59, ../sass/_team.scss */
+.team-subtitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 1px solid #413d4b;
+  margin-top: 20px;
+}
+/* line 68, ../sass/_team.scss */
 .team-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-/* line 63, ../sass/_team.scss */
+/* line 74, ../sass/_team.scss */
 .team-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #e1e1e1;
 }
-/* line 70, ../sass/_team.scss */
+/* line 81, ../sass/_team.scss */
 .team-list-item .name {
   color: #ffffff;
   font-family: Roboto, Helvetica, Georgia, sans-serif;
@@ -440,7 +473,7 @@ section {
   letter-spacing: 0.7px;
   margin-top: 25px;
 }
-/* line 80, ../sass/_team.scss */
+/* line 91, ../sass/_team.scss */
 .team-list-item .position {
   opacity: 0.7;
   color: #fafafa;
@@ -450,7 +483,7 @@ section {
   text-transform: uppercase;
   margin: 10px 0 25px;
 }
-/* line 92, ../sass/_team.scss */
+/* line 103, ../sass/_team.scss */
 .team-footer {
   color: #f3f3f3;
   font-family: Roboto, Helvetica, Georgia, sans-serif;
@@ -459,7 +492,7 @@ section {
   letter-spacing: 0.7px;
   margin: 70px 0 25px;
 }
-/* line 101, ../sass/_team.scss */
+/* line 112, ../sass/_team.scss */
 .team .expanding-button {
   background: none;
 }

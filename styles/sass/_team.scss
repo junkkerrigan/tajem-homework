@@ -52,6 +52,17 @@
     letter-spacing: 1.05px;
     margin-bottom: 65px;
     opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      border-bottom: 1px solid #413d4b;
+      margin-top: 20px;
+    }
   }
 
   &-list {
