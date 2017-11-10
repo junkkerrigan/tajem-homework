@@ -113,6 +113,7 @@
   padding: 15px;
   border: 1px solid #00e0d0;
   text-decoration: none;
+  background: none;
 }
 
 /* line 1, ../sass/_general.scss */
@@ -621,4 +622,101 @@ section {
 .quotes-carousel button {
   background: none;
   border: none;
+}
+
+/* line 1, ../sass/_clients-feedback.scss */
+.feedback-title, .clients-title {
+  color: #413d4b;
+  font-family: "Playfair Display", Helvetica, Georgia, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+/* line 10, ../sass/_clients-feedback.scss */
+.feedback-clients {
+  display: flex;
+  align-items: center;
+}
+/* line 15, ../sass/_clients-feedback.scss */
+.feedback-clients-wrapper {
+  min-width: 940px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 23, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 28, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-title {
+  margin-bottom: 35px;
+}
+/* line 32, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* line 37, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form input {
+  padding: 15px 20px;
+  width: 460px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  opacity: 0.1;
+}
+/* line 45, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form input:focus {
+  opacity: 1;
+}
+/* line 50, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form textarea {
+  padding: 20px;
+  width: 460px;
+  height: 200px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  opacity: 0.1;
+}
+/* line 59, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form textarea:focus {
+  opacity: 1;
+}
+/* line 64, ../sass/_clients-feedback.scss */
+.feedback-clients .feedback-form .expanding-button {
+  padding: 15px 30px;
+}
+/* line 72, ../sass/_clients-feedback.scss */
+.feedback-clients .clients {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 78, ../sass/_clients-feedback.scss */
+.feedback-clients .clients-title {
+  margin-bottom: 45px;
+}
+/* line 82, ../sass/_clients-feedback.scss */
+.feedback-clients .clients-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+}
+/* line 88, ../sass/_clients-feedback.scss */
+.feedback-clients .clients-list li {
+  flex-basis: 50%;
+}
+/* line 91, ../sass/_clients-feedback.scss */
+.feedback-clients .clients-list li:nth-child(even) {
+  display: flex;
+  justify-content: flex-end;
 }
