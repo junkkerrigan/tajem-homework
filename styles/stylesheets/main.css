@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display|Roboto");
 /* line 1, ../sass/_welcome.scss */
 .fixed-header {
   width: 100%;
@@ -519,7 +518,6 @@ section {
 /* line 52, ../sass/_works.scss */
 .works-list-item {
   width: calc(100% / 6);
-  overflow: hidden;
 }
 
 /* line 1, ../sass/_quotes.scss */
@@ -719,4 +717,174 @@ section {
 .feedback-clients .clients-list li:nth-child(even) {
   display: flex;
   justify-content: flex-end;
+}
+
+/* line 1, ../sass/_footer.scss */
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 8, ../sass/_footer.scss */
+.main-footer-bg::after {
+  content: "";
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 800vh;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+/* line 19, ../sass/_footer.scss */
+.main-footer-bg img {
+  position: absolute;
+  top: 800vh;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+/* line 29, ../sass/_footer.scss */
+.main-footer-wrapper {
+  position: relative;
+  z-index: 1;
+  min-width: 940px;
+  width: 60%;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+/* line 39, ../sass/_footer.scss */
+.main-footer-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 104%;
+}
+/* line 45, ../sass/_footer.scss */
+.main-footer-list li {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+/* line 53, ../sass/_footer.scss */
+.main-footer-list .sns {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+/* line 59, ../sass/_footer.scss */
+.main-footer-list .sns li {
+  margin-right: 10px;
+}
+/* line 64, ../sass/_footer.scss */
+.main-footer-list form {
+  display: flex;
+  align-items: stretch;
+}
+/* line 68, ../sass/_footer.scss */
+.main-footer-list form input {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.7px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  background: none;
+}
+/* line 81, ../sass/_footer.scss */
+.main-footer-list form button {
+  padding: 15px 25px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+/* line 91, ../sass/_footer.scss */
+.main-footer-title {
+  color: #ffffff;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 35px;
+}
+/* line 102, ../sass/_footer.scss */
+.main-footer-logo {
+  margin-bottom: 10px;
+}
+/* line 106, ../sass/_footer.scss */
+.main-footer-content {
+  color: #ffffff;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.35px;
+  width: 280px;
+}
+/* line 115, ../sass/_footer.scss */
+.main-footer-content:last-child {
+  margin-top: 25px;
+}
+/* line 119, ../sass/_footer.scss */
+.main-footer-content:nth-child(n+1) {
+  display: flex;
+}
+/* line 124, ../sass/_footer.scss */
+.main-footer .tel::before {
+  content: "";
+  background: url("../../img/phone.png");
+  width: 17px;
+  height: 17px;
+  display: block;
+  margin-right: 10px;
+}
+/* line 133, ../sass/_footer.scss */
+.main-footer .adress::before {
+  content: "";
+  background: url("../../img/adress.png");
+  width: 14px;
+  height: 19px;
+  display: block;
+  margin-right: 10px;
+}
+/* line 142, ../sass/_footer.scss */
+.main-footer footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+/* line 148, ../sass/_footer.scss */
+.main-footer .footer-formal {
+  list-style-type: none;
+  display: flex;
+}
+/* line 152, ../sass/_footer.scss */
+.main-footer .footer-formal-item {
+  color: #ffffff;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  margin-right: 35px;
+}
+/* line 164, ../sass/_footer.scss */
+.main-footer .footer-copyrights {
+  color: #ffffff;
+  font-family: Roboto, Helvetica, Georgia, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.35px;
 }
